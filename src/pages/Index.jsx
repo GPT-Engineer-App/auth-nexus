@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Button, Container, FormControl, FormLabel, Input, Stack, Heading, Text, useToast } from "@chakra-ui/react";
+import { Box, Button, Container, FormControl, FormLabel, Input, Stack, Heading, Text, useToast, Image } from "@chakra-ui/react";
 import { FaLock, FaUser } from "react-icons/fa";
 
 const Index = () => {
@@ -20,7 +20,8 @@ const Index = () => {
   };
 
   return (
-    <Container centerContent>
+    <Container centerContent maxW="container.md" py={5}>
+      <Image src="https://via.placeholder.com/400" alt="Placeholder Image" mb={8} borderRadius="md" />
       <Box p={8} maxWidth="500px" borderWidth={1} borderRadius={8} boxShadow="lg">
         <Box textAlign="center">
           <Heading>Authorization Service</Heading>
